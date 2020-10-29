@@ -1,0 +1,383 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <!-- SEO Meta Description -->
+    <meta name="description" content="">
+    <meta name="author" content="Themeland">
+    <title>Contact Us | SocialChitra</title>
+    <style>
+        {#.bg-hover:hover{#}
+        {#    color: #be63f9;#}
+        {#}#}
+        .card-input-element {
+            display: none;
+        }
+
+        .card-input {
+            margin: 10px;
+            padding: 00px;
+        }
+
+        .card-input:hover {
+            cursor: pointer;
+        }
+
+        .card-input-element:checked + .card-input {
+             box-shadow: 0 0 1px 1px #2ecc71;
+         }
+
+    </style>
+{% endblock %}
+
+{% block body %}
+        <!-- ***** Breadcrumb Area Start ***** -->
+        <section class="section breadcrumb-area overlay-dark d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Breamcrumb Content -->
+                        <div class="breadcrumb-content text-center">
+                            <h2 class="text-white text-uppercase mb-3">Contact Us</h2>
+                            <ol class="breadcrumb d-flex justify-content-center">
+                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="{% url 'home' %}">Home</a></li>
+{#                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="#">Pages</a></li>#}
+                                <li class="breadcrumb-item text-white active">Contact Us</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Breadcrumb Area End ***** -->
+
+        <section id="content">
+            <div class="container ptb_100">
+                <center><h2>Hollaa folks,<br>
+                    Due to pandemic our  Social vichitra are working from home. But we will make sure to meet and discuss at your suitable place. <br>Till then Stay home, Stay Vichitra!</h2></center>
+            </div>
+        </section>
+
+        <!--====== Contact Area Start ======-->
+        <section id="contact" class="contact-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-5">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center mb-3">
+                            <h2>Let's connect!</h2>
+                            <p class="d-none d-sm-block mt-4">Give us a slight idea about your requirements, and leave the rest to us. We will reach out to you as soon as possible and the rest will be history!</p>
+                            <p class="d-block d-sm-none mt-4">Give us a slight idea about your requirements, and we will reach out to you!</p>
+                        </div>
+                        <!-- Contact Us -->
+                        <div class="contact-us">
+                            <ul>
+                                <!-- Contact Info -->
+                                <li class="contact-info color-1 bg-hover active hover-bottom text-center p-5 m-3">
+                                    <span><i class="fas fa-mobile-alt fa-3x"></i></span>
+                                    <a class="d-block my-2" href="#">
+                                        <h3>+91 78695 11290</h3>
+                                    </a>
+                                    <p>Call us and you'll find us on the other end.</p>
+                                </li>
+                                <!-- Contact Info -->
+                                <li class="contact-info color-3 bg-hover active hover-bottom text-center p-5 m-3">
+                                    <span><i class="fas fa-envelope-open-text fa-3x"></i></span>
+                                    <a class="d-none d-sm-block my-2" href="#">
+                                        <h4>contact@socialchitra.com</h4>
+                                    </a>
+                                    <a class="d-block d-sm-none my-2" href="#">
+                                        <h5>contact@socialchitra.com</h5>
+                                    </a>
+                                    <p>if you feel lazy, just write a simple mail to us, just mentioning your requirement very briefly</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                        <!-- Contact Box -->
+                        <div class="contact-box text-center">
+                            <!-- Contact Form -->
+                            <form id="contact-form" method="POST" action="">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+                                        </div>
+                                        <div class="form-group" >
+
+                                           <div class=" col contact-info bg-hover active hover-bottom text-center">
+                                               <div class="row justify-content-center" style="margin-top:5px;margin-bottom: 10px;">Choose a service</div>
+                                               <div class="row">
+                                                <div class="col-md-4 col-lg-4 col-sm-3">
+                                                <label>
+
+                                                  <input type="radio" name="product" class="card-input-element" id="service1" />
+
+                                                    <div class="contact-info bg-hover active hover-bottom text-center m-3" style="padding: 0.8em;width: 120px;height: 117px;" id="servicecard1">
+                                                        <span><i class="fas fa-code fa-3x"></i></span>
+    {#                                                    <a class="d-block my-2" href="#">#}
+                                                        <p><small>Web development</small></p>
+    {#                                                    </a>#}
+                                                    </div>
+                                                </label>
+                                                </div>
+                                                <div class="col-md-4 col-lg-4 col-sm-3">
+
+                                                <label>
+                                                  <input type="radio" name="product" class="card-input-element" id="service2" />
+
+                                                  <div class="contact-info bg-hover active hover-bottom text-center m-3" id="servicecard2" style="padding: 0.8em;height: 117px;width: 120px;">
+                                                        <span><i class="fas fa-dollar-sign fa-3x"></i></span>
+    {#                                                    <a class="d-block my-2" href="#">#}
+                                                      <p><small>digital marketing</small></p>
+    {#                                                    </a>#}
+                                                    </div>
+                                                </label>
+                                              </div>
+                                                <div class="col-md-4 col-lg-4 col-sm-3">
+
+                                                <label>
+                                                  <input type="radio" name="product" class="card-input-element" id="service3"/>
+
+                                                  <div class="contact-info bg-hover active hover-bottom text-center m-3"  id="servicecard3" style="padding: 0.8em;width: 120px;height: 117px;">
+                                                        <span><i class="fas fa-desktop fa-3x"></i></span>
+    {#                                                    <a class="d-block my-2" href="#">#}
+                                                      <p><small>graphics</small></p>
+    {#                                                    </a>#}
+                                                    </div>
+                                                </label>
+
+                                              </div>
+                                                <div class="col-md-4 col-lg-4 col-sm-3">
+
+                                                <label>
+                                                  <input type="radio" name="product" class="card-input-element" id="service4" />
+
+                                                  <div class="contact-info bg-hover active hover-bottom text-center m-3" id="servicecard4" style="padding: 0.8em;width: 120px;height: 117px;">
+                                                        <span><i class="fas fa-question fa-3x"></i></span>
+    {#                                                    <a class="d-block my-2" href="#">#}
+                                                      <p><small>Other</small></p>
+    {#                                                    </a>#}
+                                                    </div>
+                                                </label>
+                                              </div>
+                                                <div class="col-md-4 col-lg-4 col-sm-3">
+
+                                                <label>
+                                                  <input type="radio" name="product" class="card-input-element" id="service5" />
+
+                                                  <div class="contact-info bg-hover active hover-bottom text-center m-3" id="servicecard5" style="padding: 0.8em;width: 120px;height: 117px;">
+                                                        <span><i class="fas fa-pencil-alt fa-3x"></i></span>
+    {#                                                    <a class="d-block my-2" href="#">#}
+                                                      <p><small>Content writing</small></p>
+    {#                                                    </a>#}
+                                                    </div>
+                                                </label>
+                                              </div>
+                                                <div class="col-md-4 col-lg-4 col-sm-3">
+
+                                            <label>
+                                              <input type="radio" name="product" class="card-input-element" id="service6" />
+
+                                              <div class="contact-info bg-hover active hover-bottom text-center m-3" id="servicecard6" style="padding: 0.8em;width: 120px;height: 117px;">
+                                                    <span><i class="fas fa-camera fa-3x"></i></span>
+{#                                                    <a class="d-block my-2" href="#">#}
+                                                  <p><small>photo, video creation</small></p>
+{#                                                    </a>#}
+                                                </div>
+                                            </label>
+                                          </div>
+                                               </div>
+                                            </div>
+                                        </div>
+
+                                     <div class="form-group" >
+
+                                           <div class=" col contact-info bg-hover active hover-bottom text-center">
+                                               <div class="row justify-content-center" style="margin-top:5px;margin-bottom: 10px;">Choose your budget</div>
+                                               <div class="row">
+
+
+                                                   <div class="col-md-3 col-lg-3 col-sm-4">
+
+                                                <label>
+                                                  <input type="radio" name="budget" class="card-input-element" id="budget4" />
+
+                                                  <div class="contact-info bg-hover active hover-bottom text-center m-3" id="budgetcard4" style="padding: 0.5em;width: 110px;height: 117px;">
+                                                      <span ><small>later</small></span>
+                                                        <h2>?</h2>
+    {#                                                    <a class="d-block my-2" href="#">#}
+
+    {#                                                    </a>#}
+                                                    </div>
+                                                </label>
+                                              </div>
+                                                   <div class="col-md-3 col-lg-3 col-sm-4">
+
+                                                <label>
+                                                  <input type="radio" name="budget" class="card-input-element" id="budget3" />
+
+                                                  <div class="contact-info bg-hover active hover-bottom text-center m-3" id="budgetcard3" style="padding: 0.5em;width: 110px;height: 117px;">
+                                                        <span><small>upto</small></span>
+    {#                                                    <a class="d-block my-2" href="#">#}
+                                                      <h2>15k</h2>
+    {#                                                    </a>#}
+                                                    </div>
+                                                </label>
+                                              </div>
+                                                   <div class="col-md-3 col-lg-3 col-sm-4">
+
+                                                <label>
+                                                  <input type="radio" name="budget" class="card-input-element" id="budget2"/>
+
+                                                  <div class="contact-info bg-hover active hover-bottom text-center m-3"  id="budgetcard2" style="padding: 0.5em;width: 110px;height: 117px;">
+                                                        <span><small>upto</small></span>
+    {#                                                    <a class="d-block my-2" href="#">#}
+                                                      <h2>10k</h2>
+    {#                                                    </a>#}
+                                                    </div>
+                                                </label>
+
+                                              </div>
+                                                   <div class="col-md-3 col-lg-3 col-sm-4">
+
+                                                <label>
+                                                  <input type="radio" name="budget" class="card-input-element" id="budget1" />
+
+                                                  <div class="contact-info bg-hover active hover-bottom text-center m-3" id="budgetcard1" style="padding: 0.5em;height: 117px;width: 110px;">
+                                                        <span><small>upto</small></span>
+    {#                                                    <a class="d-block my-2" href="#">#}
+                                                      <h2>5k</h2>
+    {#                                                    </a>#}
+                                                  </div>
+                                                </label>
+                                              </div>
+
+
+
+
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Phone" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="describe your work"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-bordered active btn-block mt-3"><span class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+{#                            <p class="form-message"></p>#}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== Contact Area End ======-->
+
+{#        <!--====== Map Area Start ======-->#}
+{#        <section class="section map-area">#}
+{#            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.596666220624!2d-0.16124461362595294!3d51.46556134684942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605a25375dfb7%3A0xe0d9fa09dcf932a8!2s15%20Theatre%20St%2C%20Battersea%2C%20London%20SW11%205ND%2C%20UK!5e0!3m2!1sen!2sbd!4v1567427969685!5m2!1sen!2sbd" width="100" height="100" style="border:0;" allowfullscreen=""></iframe>#}
+{#        </section>#}
+{#        <!--====== Map Area End ======-->#}
+<script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    function choose(dv) {
+   $(dv).addClass("color-1");
+ }
+ $(document).ready(function(){
+    $('#service1').click(function(){
+        console.log('clicked');
+        $('#servicecard1').addClass('color-5');
+        $('#servicecard2').removeClass('color-5');
+        $('#servicecard3').removeClass('color-5');
+        $('#servicecard4').removeClass('color-5');
+        $('#servicecard5').removeClass('color-5');
+        $('#servicecard6').removeClass('color-5');
+    });
+    $('#service2').click(function(){
+        $('#servicecard1').removeClass('color-5');
+        $('#servicecard2').addClass('color-5');
+        $('#servicecard3').removeClass('color-5');
+        $('#servicecard4').removeClass('color-5');
+        $('#servicecard5').removeClass('color-5');
+        $('#servicecard6').removeClass('color-5');
+    });
+    $('#service3').click(function(){
+        $('#servicecard1').removeClass('color-5');
+        $('#servicecard2').removeClass('color-5');
+        $('#servicecard3').addClass('color-5');
+        $('#servicecard4').removeClass('color-5');
+        $('#servicecard5').removeClass('color-5');
+        $('#servicecard6').removeClass('color-5');
+ });
+    $('#service4').click(function(){
+        $('#servicecard1').removeClass('color-5');
+        $('#servicecard2').removeClass('color-5');
+        $('#servicecard3').removeClass('color-5');
+        $('#servicecard4').addClass('color-5');
+        $('#servicecard5').removeClass('color-5');
+        $('#servicecard6').removeClass('color-5');
+ });
+    $('#service5').click(function(){
+        $('#servicecard1').removeClass('color-5');
+        $('#servicecard2').removeClass('color-5');
+        $('#servicecard3').removeClass('color-5');
+        $('#servicecard4').removeClass('color-5');
+        $('#servicecard5').addClass('color-5');
+        $('#servicecard6').removeClass('color-5');
+ });
+    $('#service6').click(function(){
+        $('#servicecard1').removeClass('color-5');
+        $('#servicecard2').removeClass('color-5');
+        $('#servicecard3').removeClass('color-5');
+        $('#servicecard4').removeClass('color-5');
+        $('#servicecard5').removeClass('color-5');
+        $('#servicecard6').addClass('color-5');
+ });
+});
+  $(document).ready(function(){
+    $('#budget1').click(function(){
+        console.log('clicked');
+        $('#budgetcard1').addClass('color-5');
+        $('#budgetcard2').removeClass('color-5');
+        $('#budgetcard3').removeClass('color-5');
+        $('#budgetcard4').removeClass('color-5');
+
+    });
+    $('#budget2').click(function(){
+        $('#budgetcard1').removeClass('color-5');
+        $('#budgetcard2').addClass('color-5');
+        $('#budgetcard3').removeClass('color-5');
+        $('#budgetcard4').removeClass('color-5');
+    });
+    $('#budget3').click(function(){
+        $('#budgetcard1').removeClass('color-5');
+        $('#budgetcard2').removeClass('color-5');
+        $('#budgetcard3').addClass('color-5');
+        $('#budgetcard4').removeClass('color-5');
+ });
+    $('#budget4').click(function(){
+        $('#budgetcard1').removeClass('color-5');
+        $('#budgetcard2').removeClass('color-5');
+        $('#budgetcard3').removeClass('color-5');
+        $('#budgetcard4').addClass('color-5');
+ });
+});
+
+    </script>
+{% endblock %}

@@ -1,0 +1,16 @@
+#00B4DB   #0083B0
+
+linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+to right, #0575e6, #021b79
+to right, #9cecfb, #65c7f7, #0052d4
+linear-gradient(to right, #65c7f7, #0052d4)
+
+linear-gradient(to left, #f7971e, #ffd200)  (YELLOW)
+to right, #e52d27, #b31217 (Youtube RED)
+to right, #1488cc, #2b32b2 (skyline)
+
+linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+
+background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(251,221,19,1) 0.1%, rgba(255,153,1,1) 90% );
+fada5e ffc30b

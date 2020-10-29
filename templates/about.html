@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>About us | SocialChitra</title>
+    <style>
+    li{
+        margin-bottom: 5px;
+    }
+
+    .description{
+        position: absolute;
+   {#top: 10px;#}
+   left: 10px;
+        {#margin-bottom: 30px;#}
+   padding: 5px;
+    }
+    .description:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+
+    .description:before{
+         box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+        filter: blur(10px);
+    }
+
+    .description{
+        background: inherit;
+    }
+    .description:before{
+        background: inherit;
+    }
+    .team-photo{
+        position: relative;
+    }
+    </style>
+{% endblock %}
+
+{% block body %}
+        <!-- ***** Breadcrumb Area Start ***** -->
+        <section class="section breadcrumb-area overlay-dark d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Breamcrumb Content -->
+                        <div class="breadcrumb-content d-flex flex-column align-items-center text-center">
+                            <h2 class="text-white text-uppercase mb-3">About Us</h2>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="{% url 'home' %}">Home</a></li>
+{#                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="#">Pages</a></li>#}
+                                <li class="breadcrumb-item text-white active">About Us</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Breadcrumb Area End ***** -->
+{% load static %}
+        <!-- ***** About Area Start ***** -->
+        <section class="section about-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+
+                    <!-- ***** Dancing vectors ***** -->
+                     <div class="col-12 col-md-5">
+                        <!-- Welcome Thumb -->
+                        <div class="welcome-thumb-wrapper mt-5 mt-md-0 container-sm">
+                            <span class="welcome-thumb-1">
+                                <img class="welcome-animation d-block ml-auto" style="width: 430px;" src="{% static 'img/logo/Asset 5@4x.png' %}" alt="">
+                            </span>
+                            <span class="welcome-thumb-2">
+{#                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_2.png' %}" alt="">#}
+                            </span>
+                            <span class="welcome-thumb-3">
+{#                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_3.png' %}" alt="">#}
+                            </span>
+                            <span class="welcome-thumb-4">
+                                <img class="welcome-animation d-block" style="width: 150px;" src="{% static 'img/logo/Asset 6@4x.png' %}" alt="">
+                            </span>
+                            <span class="welcome-thumb-5">
+{#                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_5.png' %}" alt="">#}
+                            </span>
+                            <span class="welcome-thumb-6">
+{#                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_6.png' %}" alt="">#}
+                            </span>
+                        </div>
+                    </div>
+                    <!-- ***** Dancing vectors end ***** -->
+
+                    <div class="col-12 col-lg-6">
+                        <!-- About Content -->
+                        <div class="about-content section-heading text-center text-lg-left pl-md-4 mt-5 mt-lg-0 mb-0">
+                            <h2 class="mb-3">We’re Your Partner in Your Success</h2>
+                            <p style="font-size: 18px;">We are bunch of Social Chitrakaars helping you to lead in the Digital world. </p><br>
+                            <p style="font-size: 18px;">We give you integrated solutions and ideas at one place. In short we are your one stop solution. We make you buzz and trend, with our creative and strategic ideas.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{#            </div>#}
+        </section>
+
+        <div class="container justify-content-center" style="margin-top: 15px;margin-bottom: 70px;">
+
+                        <!-- About Content -->
+                                <div class="about-content section-heading text-center text-lg-left pl-md-4 mt-5 mt-lg-0 mb-0">
+                            <h2 class="mb-3">Why Us?</h2>
+{#                                    <div style="align-content: flex-start">#}
+                            <ul style="font-size: 18px;">
+                                <li>●	We are your one stop solution in digital world.</li>
+                                <li>●	We design, create and promote together.</li>
+                                <li>●	We develop what you want and world needs.</li>
+                                <Li>●	We have strategic and creative plans.</Li>
+                                <li>●	We connect you to your ideal audience.</li>
+                                <li>●	We have engaging content.</li>
+                                <li>●	We build you as a brand and maintain its image.</li>
+                                <li>●	We offer your monthly growth reports.</li>
+                                <li>●	We make you trend.</li>
+                            </ul>
+{#                                </div>#}
+                            </div>
+                        </div>
+{#                    </div>#}
+{#        </div>#}
+
+        <!-- ***** About Area End ***** -->
+
+{#        <!-- ***** Our Goal Area Start ***** -->#}
+{#        <section class="section our-goal ptb_100">#}
+{#            <div class="container">#}
+{#                <div class="row justify-content-between align-items-center">#}
+{#                    <div class="col-12 col-lg-6">#}
+{#                        <!-- Goal Content -->#}
+{#                        <div class="goal-content section-heading text-center text-lg-left pr-md-4 mb-0">#}
+{#                            <h2 class="mb-3">Our Goal</h2>#}
+{#                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tenetur maxime labore recusandae enim dolore, nesciunt, porro molestias ullam eum atque harum! Consectetur, facilis maxime ratione fugiat laborum omnis atque quae, molestiae rem perspiciatis veritatis cumque ex minima, numquam quis dicta impedit possimus tempore? Quo sequi labore, explicabo sit vitae.</p><br>#}
+{#                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure excepturi eos, tenetur minima dignissimos repellendus laudantium, rem, quo ipsam esse maiores sequi ex debitis quae facilis dolorum voluptates animi.</p>#}
+{#                            <a href="#" class="btn btn-bordered mt-4">Read More</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-12 col-lg-6">#}
+{#                        <!-- Goal Thumb -->#}
+{#                        <div class="goal-thumb mt-5 mt-lg-0">#}
+{#                            <img src="{% static 'img/about/about_thumb_2.jpg' %}" alt="">#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </section>#}
+{#        <!-- ***** Our Goal Area End ***** -->#}
+
+        <!-- ***** Team Area Start ***** -->
+        <section class="section team-area bg-grey ptb_100">
+            <!-- Shape Top -->
+            <div class="shape shape-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Our Experts</h2>
+                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <img src="{% static 'img/team/thumb_1.jpg' %}">
+                                <div class="description">fwffdfdkf re ffrfe</div>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Junaid Hasan</h3>
+                                </a>
+                                <h5 class="text-uppercase">Marketing Officer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="{% static 'img/team/thumb_2.jpg' %}" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Yasmin Akter</h3>
+                                </a>
+                                <h5 class="text-uppercase">SEO Expert</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_3.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Md. Arham</h3>
+                                </a>
+                                <h5 class="text-uppercase">Media Controller</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_4.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Jassica William</h3>
+                                </a>
+                                <h5 class="text-uppercase">Data Analyst</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_5.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">John Doe</h3>
+                                </a>
+                                <h5 class="text-uppercase">Web Developer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_6.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Sara Scotch</h3>
+                                </a>
+                                <h5 class="text-uppercase">Graphic Designer</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Team Area End ***** -->
+
+        <!--====== Call To Action Area Start ======-->
+        {% include 'call-to-action.html' %}
+        <!--====== Call To Action Area End ======-->
+
+{% endblock %}

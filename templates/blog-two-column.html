@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Blogs | SocialChitra</title>
+{% endblock %}
+
+{% block body %}
+        <!-- ***** Breadcrumb Area Start ***** -->
+        <section class="section breadcrumb-area overlay-dark d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Breamcrumb Content -->
+                        <div class="breadcrumb-content text-center">
+                            <h2 class="text-white text-uppercase mb-3">Blogs</h2>
+                            <ol class="breadcrumb d-flex justify-content-center">
+                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="index.html">Home</a></li>
+{#                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="#">Blog Pages</a></li>#}
+{#                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="#">Blog Grid</a></li>#}
+                                <li class="breadcrumb-item text-white active">Blogs</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Breadcrumb Area End ***** -->
+
+        <!-- ***** Blog Area Start ***** -->
+        <section id="blog" class="section blog-area ptb_100">
+            <div class="container">
+                <div class="row">
+                    {% for blog in blogs %}
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="{% url 'blog single' slug=blog.slug %}"><img src="{{  blog.thumbnail.url }}" alt=""></a>
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By {{ blog.author}}</li>
+                                    <li><a href="{% url 'blog single' slug=blog.slug %}">{{ blog.created }}</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3"><a href="{% url 'blog single' slug=blog.slug %}">{{ blog.title}}</a></h3>
+                                <p>{{ blog.snippet }}</p>
+                                <a href="{% url 'blog single' slug=blog.slug %}" class="blog-btn mt-3">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Pagination -->
+                    {% if blogs.has_other_pages %}
+                        <ul class="pagination justify-content-center">
+                        {% if blogs.has_previous %}
+                            <li class="px-1">
+                                <a href="?page={{ blogs.previous_page_number }}">
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </li>
+                            {% else %}
+                            <li class="disabled px-1">
+                                <a href="#" aria-label="Previous">
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% for i in blogs.paginator.page_range %}
+                            {% if blogs.number == i %}
+{#                            <li class="px-1"><a href="#">1</a></li>#}
+                                <li class="active px-1"><a href="#">{{ i }}</a></li>
+                            {% else %}
+                                <li class="px-1"><a href="?page={{ i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if blogs.has_next %}
+                            <li>
+                                <a href="?page={{ blogs.next_page_number }}" aria-label="Next">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </li>
+                        {% else %}
+                            <li class="disabled px-1">
+                                <a href="#" aria-label="Next">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        </ul>
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Blog Area End ***** -->
+
+        <!--====== Call To Action Area Start ======-->
+        {% include 'call-to-action.html' %}
+        <!--====== Call To Action Area End ======-->
+
+
+{% endblock %}

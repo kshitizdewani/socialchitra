@@ -1,0 +1,568 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>SocialChitra</title>
+{% endblock %}
+{% block body %}
+    {% load static %}
+            <!-- ***** Welcome Area Start ***** -->
+        <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Welcome Intro Start -->
+                    <div class="col-12 col-md-7">
+                        <div class="welcome-intro text-right">
+                            <h1 class="text-white">Let us get your bussiness to the online world.</h1>
+                            <p class="text-white my-4">Why? because everyone's here. Sellers, buyers.<br>A good bussiness is the one that is accessible from every part of the country!</p>
+                            <!-- Buttons -->
+                            <div class="button-group">
+                                <a href="#" class="btn btn-bordered-white">Start a Project</a>
+                                <a href="#" class="btn btn-bordered-white d-none d-sm-inline-block">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <!-- Welcome Thumb -->
+                        <div class="welcome-thumb-wrapper mt-5 mt-md-0">
+                            <span class="welcome-thumb-1">
+                                <img class="welcome-animation d-block ml-auto" src="{% static '/img/welcome/thumb_1.png' %}" alt="">
+                            </span>
+                            <span class="welcome-thumb-2">
+                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_2.png' %}" alt="">
+                            </span>
+                            <span class="welcome-thumb-3">
+                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_3.png' %}" alt="">
+                            </span>
+                            <span class="welcome-thumb-4">
+                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_4.png' %}" alt="">
+                            </span>
+                            <span class="welcome-thumb-5">
+                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_5.png' %}" alt="">
+                            </span>
+                            <span class="welcome-thumb-6">
+                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_6.png' %}" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
+
+        <!-- ***** Service Area End ***** -->
+        <section class="section service-area ptb_150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service service-gallery m-0 overflow-hidden">
+                            <!-- Service Thumb -->
+                            <div class="service-thumb">
+                                <a href="#"><img src="{% static 'img/services/services8.png' %}" alt=""></a>
+                            </div>
+                            <!-- Service Content -->
+                            <div class="service-content bg-white">
+                                <a href="#">
+                                    <h3>Content Writing</h3>
+                                </a>
+                                <p class="py-3">We develop content to make you visible.Social media, blogs, PR marketing & web content.. we offer all kinds of content.</p>
+                                <a class="service-btn" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service service-gallery m-0 overflow-hidden">
+                            <!-- Service Thumb -->
+                            <div class="service-thumb">
+                                <a href="#"><img src="{% static 'img/services/services9.png' %}" alt=""></a>
+                            </div>
+                            <!-- Service Content -->
+                            <div class="service-content bg-white">
+                                <a href="#">
+                                    <h3>Digital Marketing</h3>
+                                </a>
+                                <p class="py-3">We are here to make your way in the new world. At Social Chitra we build you as a brand.</p>
+                                <a class="service-btn" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service service-gallery m-0 overflow-hidden">
+                            <!-- Service Thumb -->
+                            <div class="service-thumb">
+                                <a href="#"><img src="{% static 'img/services/Programming-rafiki.png' %}" alt=""></a>
+                            </div>
+                            <!-- Service Content -->
+                            <div class="service-content bg-white">
+                                <a href="#">
+                                    <h3>Web Development</h3>
+                                </a>
+                                <p class="py-3">We design and create beautiful and effective websites that clearly explain your services.</p>
+                                <a class="service-btn" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+        <!-- ***** Content Area Start ***** -->
+        <section class="section content-area bg-grey ptb_150">
+            <!-- Shape Top -->
+            <div class="shape shape-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-6">
+                        <!-- Content Inner -->
+                        <div class="content-inner text-center">
+                            <!-- Section Heading -->
+                            <div class="section-heading text-center mb-3">
+                                <h2>We help to grow your business.</h2>
+                                <p class="d-none d-sm-block mt-4">We at Social Chitra build your business to lessen your Busy-ness. We nurture your dream from the scratch to lead.</p>
+                                <p class="d-block d-sm-none mt-4">We at Social Chitra build your business to lessen your Busy-ness. We nurture your dream from the scratch to lead.</p>
+                            </div>
+                            <!-- Content List -->
+                            <ul class="content-list text-left">
+                                <!-- Single Content List -->
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Online Presence</b><br>We as Social Chitrkaars holds the key responsibility to boost your Social Charitra. We enhance your online presence with the tools of compatibility, trust and success.</span>
+                                    </div>
+                                </li>
+                                <!-- Single Content List -->
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Marketing Stretagy</b><br>Strategic plans and effective research is the key to lead a company. That’s the reason we make our plans with proper market research and come up with Strategic plans to lead in the Trend.</span>
+                                    </div>
+                                </li>
+                                <!-- Single Content List -->
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Promote Local Sales</b><br>Sales is our synonym to Success. Our ideal motto is to lead your local sales and boost your business in all strategic ways.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- Service Thumb -->
+                        <div class="service-thumb mx-auto pt-4 pt-lg-0">
+                            <img src="{% static 'img/content/content_thumb.png' %}" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Content Area End ***** -->
+
+        <!-- ***** Content Area Start ***** -->
+        <section class="section content-area ptb_150">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-6">
+                        <!-- Profile Circle Wrapper -->
+                        <div class="profile-circle-wrapper circle-animation d-none d-sm-block">
+                            <!-- Profile Inner -->
+                            <div class="profile-inner">
+                                <!-- Profile Circle -->
+                                <div class="profile-circle circle-lg">
+                                    <span class="profile-icon icon-1">
+                                        <img class="icon-1-img" src="{% static 'img/content/profile-icons/profile_icon_1.svg' %}" alt="" />
+                                    </span>
+                                    <span class="profile-icon icon-2">
+                                        <img class="icon-2-img" src="{% static 'img/content/profile-icons/profile_icon_2.svg' %}" alt="" />
+                                    </span>
+                                    <span class="profile-icon icon-3">
+                                        <img class="icon-3-img" src="{% static 'img/content/profile-icons/profile_icon_1.svg' %}" alt="" />
+                                    </span>
+                                    <span class="profile-icon icon-4">
+                                        <img class="icon-4-img" src="{% static 'img/content/profile-icons/profile_icon_2.svg' %}" alt="" />
+                                    </span>
+                                </div>
+
+                                <!-- Profile Circle -->
+                                <div class="profile-circle circle-md">
+                                    <span class="profile-icon icon-5">
+                                        <img class="icon-5-img" src="{% static 'img/content/profile-icons/profile_icon_3.svg' %}" alt="" />
+                                    </span>
+                                    <span class="profile-icon icon-6">
+                                        <img class="icon-6-img" src="{% static 'img/content/profile-icons/profile_icon_3.svg' %}" alt="" />
+                                    </span>
+                                    <span class="profile-icon icon-7">
+                                        <img class="icon-7-img" src="{% static 'img/content/profile-icons/profile_icon_3.svg' %}" alt="" />
+                                    </span>
+                                </div>
+
+                                <!-- Profile Circle -->
+                                <div class="profile-circle circle-sm">
+                                    <span class="profile-icon icon-8">
+                                        <img class="icon-8-img" src="{% static 'img/content/profile-icons/profile_icon_4.svg' %}" alt="" />
+                                    </span>
+                                    <span class="profile-icon icon-9">
+                                        <img class="icon-9-img" src="{% static 'img/content/profile-icons/profile_icon_4.svg' %}" alt="" />
+                                    </span>
+                                </div>
+                            </div>
+                            <img class="folder-img" src="{% static 'img/content/folders.png' %}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- Content Inner -->
+                        <div class="content-inner text-center pt-sm-4 pt-lg-0 mt-sm-5 mt-lg-0">
+                            <!-- Section Heading -->
+                            <div class="section-heading text-center mb-3">
+                                <h2>Work smarter,<br> not harder.</h2>
+                                <p class="d-none d-sm-block mt-4">Our mind boggling team of Social Chitra, paves on the path of creativity. We believe that working effectively for a little time will develop your brain flow in creativity, while tempering it whole day.</p>
+                                <p class="d-block d-sm-none mt-4"> We believe that working effectively for a little time will develop your brain flow in creativity, while tempering it whole day.</p>
+                            </div>
+                            <!-- Content List -->
+                            <ul class="content-list text-left">
+                                <!-- Single Content List -->
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Digital Agency &amp; Marketing</b><br>Social Chitra is your one stop solution to lead in Digital world. We make you trend with our strategic plans, research and trendy graphics. </span>
+                                    </div>
+                                </li>
+                                <!-- Single Content List -->
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Planning To Startup</b><br>We build you as brand by creating, designing and promoting. We make what you want and let you trend by our creativity. </span>
+                                    </div>
+                                </li>
+                                <!-- Single Content List -->
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Content Management</b><br>Content is the core part to connect, as it engages your audience. Our team of fine writers are always ready with their keyboards to present an effective content to lead.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Content Area End ***** -->
+
+        <!-- ***** Service Area End ***** -->
+        <section id="service" class="section service-area bg-grey ptb_150">
+            <!-- Shape Top -->
+            <div class="shape shape-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>We provide the best digital services</h2>
+                            <p class="d-none d-sm-block mt-4">We make you buzz and trend, with our creative and strategic ideas and variety of services.</p>
+                            <p class="d-block d-sm-none mt-4">We make you buzz and trend, with our creative and strategic ideas and variety of services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-rocket-launch color-1 icon-bg-1"></span>
+                            <h3 class="my-3">Online Reputation management</h3>
+                            <p>We maintain your brand’s identity. We help you in every way to flourish your brand. </p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-monitoring color-2 icon-bg-2"></span>
+                            <h3 class="my-3">Media Planning</h3>
+                            <p>We make you reach to your ideal audience through Paid Promotions, PPC and E-mail marketing.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-web color-3 icon-bg-3"></span>
+                            <h3 class="my-3">Digital Content, SEO</h3>
+                            <p>Content creators analyse the trend and curate the best of the engaging content.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-smartphone color-4 icon-bg-4"></span>
+                            <h3 class="my-3">Web Development</h3>
+                            <p>We create powerful websites for you with a great combination of creativity and technical skills.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-email color-5 icon-bg-5"></span>
+                            <h3 class="my-3">Graphics Designing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt emit.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-affiliate color-6 icon-bg-6"></span>
+                            <h3 class="my-3">Digital Marketing</h3>
+                            <p>From Brand Consulting to Campaign Planning, Consumer and Product research we do all. </p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+{#    {% include 'lets-connect.html' %}#}
+    {% include 'call-to-action.html' %}
+
+{#        <!-- ***** Price Plan Area Start ***** -->#}
+{#        <section id="pricing" class="section price-plan-area overflow-hidden ptb_100">#}
+{#            <div class="container">#}
+{#                <div class="row justify-content-center">#}
+{#                    <div class="col-12 col-md-10 col-lg-7">#}
+{#                        <!-- Section Heading -->#}
+{#                        <div class="section-heading text-center">#}
+{#                            <h2>Our Price Plans</h2>#}
+{#                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>#}
+{#                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="row justify-content-center">#}
+{#                    <div class="col-12 col-lg-8">#}
+{#                        <div class="row price-plan-wrapper">#}
+{#                            <div class="col-12 col-md-6">#}
+{#                                <!-- Single Price Plan -->#}
+{#                                <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">#}
+{#                                    <!-- Plan Title -->#}
+{#                                    <div class="plan-title mb-2 mb-sm-3">#}
+{#                                        <h3 class="mb-2">Basic</h3>#}
+{#                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nemo.</p>#}
+{#                                    </div>#}
+{#                                    <!-- Plan Price -->#}
+{#                                    <div class="plan-price pb-2 pb-sm-3">#}
+{#                                        <span class="color-primary fw-7">$</span>#}
+{#                                        <span class="h1 fw-7">49</span>#}
+{#                                        <sub class="validity text-muted fw-5">/mo</sub>#}
+{#                                    </div>#}
+{#                                    <!-- Plan Description -->#}
+{#                                    <div class="plan-description">#}
+{#                                        <ul class="plan-features">#}
+{#                                            <li class="py-2">5GB Linux Web Space</li>#}
+{#                                            <li class="py-2">5 MySQL Databases</li>#}
+{#                                            <li class="py-2 text-muted">24/7 Tech Support</li>#}
+{#                                            <li class="py-2 text-muted">Daily Backups</li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                    <!-- Plan Button -->#}
+{#                                    <div class="plan-button">#}
+{#                                        <a href="#" class="btn btn-bordered mt-3">Get Started</a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-12 col-md-6 mt-4 mt-md-0">#}
+{#                                <!-- Single Price Plan -->#}
+{#                                <div class="single-price-plan color-2 bg-hover active hover-top text-center p-5">#}
+{#                                    <!-- Plan Title -->#}
+{#                                    <div class="plan-title mb-2 mb-sm-3">#}
+{#                                        <h3 class="mb-2">Pro <sup><span class="badge badge-pill badge-warning ml-2">Save 20%</span></sup></h3>#}
+{#                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nemo.</p>#}
+{#                                    </div>#}
+{#                                    <!-- Plan Price -->#}
+{#                                    <div class="plan-price pb-2 pb-sm-3">#}
+{#                                        <span class="color-primary fw-7">$</span>#}
+{#                                        <span class="h1 fw-7">129</span>#}
+{#                                        <sub class="validity text-muted fw-5">/mo</sub>#}
+{#                                    </div>#}
+{#                                    <!-- Plan Description -->#}
+{#                                    <div class="plan-description">#}
+{#                                        <ul class="plan-features">#}
+{#                                            <li class="py-2">10GB Linux Web Space</li>#}
+{#                                            <li class="py-2">50 MySQL Databases</li>#}
+{#                                            <li class="py-2">Unlimited Email</li>#}
+{#                                            <li class="py-2">Daily Backups</li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                    <!-- Plan Button -->#}
+{#                                    <div class="plan-button">#}
+{#                                        <a href="#" class="btn btn-bordered mt-3">Get Started</a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="row justify-content-center pt-5">#}
+{#                    <p class="pt-4 fw-5">Not sure what to choose? <a class="service-btn" href="#"><strong>Contact Us</strong></a></p>#}
+{#                </div>#}
+{#            </div>#}
+{#        </section>#}
+{#        <!-- ***** Price Plan Area End ***** -->#}
+{##}
+{#        <!-- ***** Review Area Start ***** -->#}
+{#        <section id="review" class="section review-area bg-overlay ptb_100">#}
+{#            <div class="container">#}
+{#                <div class="row justify-content-center">#}
+{#                    <div class="col-12 col-md-10 col-lg-7">#}
+{#                        <!-- Section Heading -->#}
+{#                        <div class="section-heading text-center">#}
+{#                            <h2 class="text-white">Our clients says</h2>#}
+{#                            <p class="text-white d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>#}
+{#                            <p class="text-white d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="row">#}
+{#                    <!-- Client Reviews -->#}
+{#                    <div class="client-reviews owl-carousel">#}
+{#                        <!-- Single Review -->#}
+{#                        <div class="single-review p-5">#}
+{#                            <!-- Review Content -->#}
+{#                            <div class="review-content">#}
+{#                                <!-- Review Text -->#}
+{#                                <div class="review-text">#}
+{#                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est modi amet error earum aperiam, fuga labore facere rem ab nemo possimus cum excepturi expedita. Culpa rerum, quaerat qui non.</p>#}
+{#                                </div>#}
+{#                                <!-- Quotation Icon -->#}
+{#                                <div class="quot-icon">#}
+{#                                    <img class="avatar-sm" src="{% static 'img/quote.png' %}" alt="">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <!-- Reviewer -->#}
+{#                            <div class="reviewer media mt-3">#}
+{#                                <!-- Reviewer Thumb -->#}
+{#                                <div class="reviewer-thumb">#}
+{#                                    <img class="avatar-lg radius-100" src="{% static 'img/avatar/avatar-1.png' %}" alt="">#}
+{#                                </div>#}
+{#                                <!-- Reviewer Media -->#}
+{#                                <div class="reviewer-meta media-body align-self-center ml-4">#}
+{#                                    <h5 class="reviewer-name color-primary mb-2">Junaid Hasan</h5>#}
+{#                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <!-- Single Review -->#}
+{#                        <div class="single-review p-5">#}
+{#                            <!-- Review Content -->#}
+{#                            <div class="review-content">#}
+{#                                <!-- Review Text -->#}
+{#                                <div class="review-text">#}
+{#                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est modi amet error earum aperiam, fuga labore facere rem ab nemo possimus cum excepturi expedita. Culpa rerum, quaerat qui non.</p>#}
+{#                                </div>#}
+{#                                <!-- Quotation Icon -->#}
+{#                                <div class="quot-icon">#}
+{#                                    <img class="avatar-sm" src="{% static 'img/quote.png' %}" alt="">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <!-- Reviewer -->#}
+{#                            <div class="reviewer media mt-3">#}
+{#                                <!-- Reviewer Thumb -->#}
+{#                                <div class="reviewer-thumb">#}
+{#                                    <img class="avatar-lg radius-100" src="{% static 'assets/img/avatar/avatar-2.png' %}" alt="">#}
+{#                                </div>#}
+{#                                <!-- Reviewer Media -->#}
+{#                                <div class="reviewer-meta media-body align-self-center ml-4">#}
+{#                                    <h5 class="reviewer-name color-primary mb-2">Yasmin Akter</h5>#}
+{#                                    <h6 class="text-secondary fw-6">Founder, Themeland</h6>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <!-- Single Review -->#}
+{#                        <div class="single-review p-5">#}
+{#                            <!-- Review Content -->#}
+{#                            <div class="review-content">#}
+{#                                <!-- Review Text -->#}
+{#                                <div class="review-text">#}
+{#                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est modi amet error earum aperiam, fuga labore facere rem ab nemo possimus cum excepturi expedita. Culpa rerum, quaerat qui non.</p>#}
+{#                                </div>#}
+{#                                <!-- Quotation Icon -->#}
+{#                                <div class="quot-icon">#}
+{#                                    <img class="avatar-sm" src="{% static 'img/quote.png' %}]" alt="">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <!-- Reviewer -->#}
+{#                            <div class="reviewer media mt-3">#}
+{#                                <!-- Reviewer Thumb -->#}
+{#                                <div class="reviewer-thumb">#}
+{#                                    <img class="avatar-lg radius-100" src="{% static 'img/avatar/avatar-3.png' %}" alt="">#}
+{#                                </div>#}
+{#                                <!-- Reviewer Media -->#}
+{#                                <div class="reviewer-meta media-body align-self-center ml-4">#}
+{#                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>#}
+{#                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </section>#}
+{#        <!-- ***** Review Area End ***** -->#}
+
+{% endblock %}
