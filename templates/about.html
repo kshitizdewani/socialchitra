@@ -9,11 +9,9 @@
 
     .description{
         position: absolute;
-   {#top: 10px;#}
-   left: 10px;
-        {#margin-bottom: 30px;#}
-   padding: 5px;
-    }
+        left: 10px; 
+        padding: 5px;
+        }
     .description:before{
     content: '';
     position: absolute;
@@ -64,37 +62,27 @@
         <!-- ***** About Area Start ***** -->
         <section class="section about-area ptb_100">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
+                <div class="row">
 
-                    <!-- ***** Dancing vectors ***** -->
-                     <div class="col-12 col-md-5">
+                                        <!-- ***** Dancing vectors ***** -->
+                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <!-- Welcome Thumb -->
                         <div class="welcome-thumb-wrapper mt-5 mt-md-0 container-sm">
                             <span class="welcome-thumb-1">
-                                <img class="welcome-animation d-block ml-auto" style="width: 430px;" src="{% static 'img/logo/Asset 5@4x.png' %}" alt="">
+                                <img class="welcome-animation d-block ml-auto" style="width:80%" src="{% static 'img/logo/Asset 5@4x.png' %}" alt="">
                             </span>
-                            <span class="welcome-thumb-2">
-{#                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_2.png' %}" alt="">#}
-                            </span>
-                            <span class="welcome-thumb-3">
-{#                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_3.png' %}" alt="">#}
-                            </span>
+
                             <span class="welcome-thumb-4">
-                                <img class="welcome-animation d-block" style="width: 150px;" src="{% static 'img/logo/Asset 6@4x.png' %}" alt="">
+                                <img class="welcome-animation d-block" style="width:30%;float:right;" src="{% static 'img/logo/Asset 6@4x.png' %}" alt="">
                             </span>
-                            <span class="welcome-thumb-5">
-{#                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_5.png' %}" alt="">#}
-                            </span>
-                            <span class="welcome-thumb-6">
-{#                                <img class="welcome-animation d-block" src="{% static 'img/welcome/thumb_6.png' %}" alt="">#}
-                            </span>
+
                         </div>
                     </div>
                     <!-- ***** Dancing vectors end ***** -->
 
-                    <div class="col-12 col-lg-6">
+                    <div class="col-sm-12 col-lg-8 col-md-8">
                         <!-- About Content -->
-                        <div class="about-content section-heading text-center text-lg-left pl-md-4 mt-5 mt-lg-0 mb-0">
+                        <div class="about-content section-heading text-lg-left pl-md-4 mt-5 mt-lg-0 mb-0">
                             <h2 class="mb-3">We’re Your Partner in Your Success</h2>
                             <p style="font-size: 18px;">We are bunch of Social Chitrakaars helping you to lead in the Digital world. </p><br>
                             <p style="font-size: 18px;">We give you integrated solutions and ideas at one place. In short we are your one stop solution. We make you buzz and trend, with our creative and strategic ideas.</p>
@@ -102,58 +90,57 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
-{#            </div>#}
+            </div>
         </section>
 
-        <div class="container justify-content-center" style="margin-top: 15px;margin-bottom: 70px;">
 
-                        <!-- About Content -->
-                                <div class="about-content section-heading text-center text-lg-left pl-md-4 mt-5 mt-lg-0 mb-0">
-                            <h2 class="mb-3">Why Us?</h2>
-{#                                    <div style="align-content: flex-start">#}
-                            <ul style="font-size: 18px;">
-                                <li>●	We are your one stop solution in digital world.</li>
-                                <li>●	We design, create and promote together.</li>
-                                <li>●	We develop what you want and world needs.</li>
-                                <Li>●	We have strategic and creative plans.</Li>
-                                <li>●	We connect you to your ideal audience.</li>
-                                <li>●	We have engaging content.</li>
-                                <li>●	We build you as a brand and maintain its image.</li>
-                                <li>●	We offer your monthly growth reports.</li>
-                                <li>●	We make you trend.</li>
-                            </ul>
-{#                                </div>#}
+        <!-- ***** Content Area Start ***** -->
+        <section class="section content-area bg-white ptb_120">
+            <!-- Shape Top -->
+
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12">
+                        <!-- Content Inner -->
+                        <div class="content-inner text-center">
+                            <!-- Section Heading -->
+                            <div class="section-heading text-center mb-10">
+                                
+                                <h2>Why us?</h2>
+                                <!-- <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                                <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p> -->
                             </div>
+                            <!-- Content List -->
+                            <ul class="row content-list text-left">
+                                {% for x in why_us %}
+                                    {% if not x.hide %}
+                                        <li class="col-md-6 col-sm-12 single-content-list media py-2">
+                                            <div class="content-icon pr-4">
+                                                <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                            </div>
+                                            <div class="content-text media-body">
+                                                <span>{{x.content}}</span>
+                                            </div>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
                         </div>
-{#                    </div>#}
-{#        </div>#}
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- Service Thumb -->
+                        <div class="service-thumb mx-auto pt-4 pt-lg-0">
+                            <img src="assets/img/content/content_thumb.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            
+        </section>
+        <!-- ***** Content Area End ***** -->
 
-        <!-- ***** About Area End ***** -->
-
-{#        <!-- ***** Our Goal Area Start ***** -->#}
-{#        <section class="section our-goal ptb_100">#}
-{#            <div class="container">#}
-{#                <div class="row justify-content-between align-items-center">#}
-{#                    <div class="col-12 col-lg-6">#}
-{#                        <!-- Goal Content -->#}
-{#                        <div class="goal-content section-heading text-center text-lg-left pr-md-4 mb-0">#}
-{#                            <h2 class="mb-3">Our Goal</h2>#}
-{#                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tenetur maxime labore recusandae enim dolore, nesciunt, porro molestias ullam eum atque harum! Consectetur, facilis maxime ratione fugiat laborum omnis atque quae, molestiae rem perspiciatis veritatis cumque ex minima, numquam quis dicta impedit possimus tempore? Quo sequi labore, explicabo sit vitae.</p><br>#}
-{#                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure excepturi eos, tenetur minima dignissimos repellendus laudantium, rem, quo ipsam esse maiores sequi ex debitis quae facilis dolorum voluptates animi.</p>#}
-{#                            <a href="#" class="btn btn-bordered mt-4">Read More</a>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-12 col-lg-6">#}
-{#                        <!-- Goal Thumb -->#}
-{#                        <div class="goal-thumb mt-5 mt-lg-0">#}
-{#                            <img src="{% static 'img/about/about_thumb_2.jpg' %}" alt="">#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </section>#}
-{#        <!-- ***** Our Goal Area End ***** -->#}
 
         <!-- ***** Team Area Start ***** -->
         <section class="section team-area bg-grey ptb_100">
@@ -170,9 +157,9 @@
                     <div class="col-12 col-md-10 col-lg-7">
                         <!-- Section Heading -->
                         <div class="section-heading text-center">
-                            <h2>Our Experts</h2>
-                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                            <h2>Meet our Team</h2>
+                            {% comment %} <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p> {% endcomment %}
                         </div>
                     </div>
                 </div>

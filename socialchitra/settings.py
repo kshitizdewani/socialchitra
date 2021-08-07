@@ -26,7 +26,7 @@ SECRET_KEY = 'q@=9^ol(fie7m_*5t)@$53pcr=1o@uz6-&u$tu9(=@q4xj#=08'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['socialchitra.herokuapp.com','.localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ['socialchitra.herokuapp.com','.localhost', '127.0.0.1', '[::1]','45.15.25.69']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blogs',
     'django_summernote',
+    'databases',
 ]
 
 MIDDLEWARE = [
