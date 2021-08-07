@@ -5,3 +5,4 @@ from .models import *
 
 admin.site.register(WhyUs)
 admin.site.register(Team)
+admin.site.register(Service)
